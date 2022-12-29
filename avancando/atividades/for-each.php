@@ -1,19 +1,23 @@
 <?php
 
-
 $contasCorrente = [
-    123456789=>[
+    '123.456.789-00'=>[
         'titular' => 'Vinicius',
         'saldo' => 1000
     ], 
-    234567891=>[
+    '234.567.891-01'=>[
         'titular' => 'Maria',
         'saldo' => 10000
     ], 
-    345678912=>[
+    '345.678.912-02'=>[
         'titular' => 'Alberto',
         'saldo' => 300
     ]];
+
+$contasCorrente['456.789.123.-04'] = [
+    'titular' => 'Claudia',
+    'saldo' => 2000
+];
 
 foreach($contasCorrente as $cpf =>$conta){
     echo $cpf . PHP_EOL;
