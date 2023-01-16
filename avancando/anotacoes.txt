@@ -1,0 +1,4 @@
+-Funções em php não mexem direto na memoria passada, usa uma copia
+-Parâmetros de funções podem ter tipos
+-Um inteiro cabem em um float
+-tipo do retorno da função depois dos parâmetros =>:tipo 
