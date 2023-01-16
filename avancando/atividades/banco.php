@@ -50,7 +50,9 @@ $contasCorrente['345.678.912-02'] = sacar($contasCorrente['345.678.912-02'], 300
 $contasCorrente['123.456.789-00'] = depositar($contasCorrente['123.456.789-00'], 900);
 
 foreach($contasCorrente as $cpf =>$conta){
-    exibeMensagem($cpf);
-    exibeMensagem($conta['titular']);
-    exibeMensagem($conta['saldo']);
+    exibeMensagem("$cpf $conta[titular] $conta[saldo]");
+}
+
+foreach($contasCorrente as $cpf =>$conta){
+    exibeMensagem("$cpf {$conta['titular']} {$conta['saldo']}");
 }

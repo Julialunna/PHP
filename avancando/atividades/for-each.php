@@ -20,7 +20,7 @@ $contasCorrente['456.789.123.-04'] = [
 ];
 
 foreach($contasCorrente as $cpf =>$conta){
-    echo $cpf . PHP_EOL;
-    echo $conta['titular'] . PHP_EOL;
-    echo $conta['saldo'] . PHP_EOL;
+    echo $cpf;
+    echo $conta['titular'];
+    echo $conta['saldo'];
 }
