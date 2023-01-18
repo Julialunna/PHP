@@ -1,6 +1,6 @@
 <?php
 function exibeMensagem(string $mensagem) {
-    echo $mensagem . PHP_EOL;
+    echo $mensagem . '<br>';
 }
    
 function sacar(array $conta, float $valoASacar) : array
@@ -22,4 +22,14 @@ function depositar (array $conta, float $valorADepositar) : array
         exibeMensagem("Depósito inválido");
     }
     return $conta;
+}
+
+function titularComLetrasMaiusculas(array &$conta){
+    $conta['titular'] = mb_strtoupper($conta['titular']);
+}
+
+function exibeConta (array $conta)
+{
+    ['titular'=>$titular, 'saldo'=>$saldo] = $conta;
+    echo "<li>Titular: $titular $saldo</li>";
 }
